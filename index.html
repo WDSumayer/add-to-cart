@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phone hunter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+        <h1 class="text-center py-4">Welcome to our Phone hunter site.</h1>
+    </header>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="phones-container">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                          <div class="card">
+                            <img src="https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d3Jpc3R3YXRjaHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Watch</h5>
+                              <p>Price : $ <span>10</span></p>
+                              <button onclick="addListButton(this)" class="bg-primary rounded-1 border-0 text-white fw-semibold w-100 py-2">Add</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card">
+                            <img src="https://images.unsplash.com/photo-1521572089244-e5aaacacca6b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGlwaG9uZXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">iPhone</h5>
+                              <p>Price : $ <span>5000</span></p>
+                              <button onclick="addListButton(this)" class="bg-primary rounded-1 border-0 text-white fw-semibold w-100 py-2">Add</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card">
+                            <img src="https://images.unsplash.com/photo-1520186994231-6ea0019d8d51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8aGVhZHBob25lc3xlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">HeadPhone</h5>
+                              <p>Price : $ <span>5</span></p>
+                              <button onclick="addListButton(this)" class="bg-primary rounded-1 border-0 text-white fw-semibold w-100 py-2">Add</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card">
+                            <img src="https://images.unsplash.com/photo-1633431577706-595c31e64d50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BlYWtlcnxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Speaker</h5>
+                              <p>Price : $ <span>300</span></p>
+                              <button onclick="addListButton(this)" class="bg-primary rounded-1 border-0 text-white fw-semibold w-100 py-2">Add</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div>
+                    <h1>Added list</h1>
+                    <div style="height:350px; overflow:scroll;">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr class="bg-primary text-white">
+                                    <td class="fs-5">No</td>
+                                    <td class="fs-5">Name</td>
+                                    <td class="text-end fs-5">Price</td>
+                                </tr>
+                            </thead>
+                            
+                                <tbody id="item-list-container">
+                                  
+                                </tbody>
+                            
+                            
+                           
+                        </table>
+                    </div>
+                    <div class="item-total-container d-flex justify-content-between bg-primary text-white p-3">
+                        <h5>Total</h5>
+                        <h5 id="item-total-price">0</h5>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
