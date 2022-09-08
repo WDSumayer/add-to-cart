@@ -4,3 +4,7 @@
 .active{
     background-color: red;
 }
+.disable-btn{
+    background-color: rgb(161, 161, 161);
+    color:rgb(117, 117, 117);
+}

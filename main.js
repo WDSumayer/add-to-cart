@@ -3,6 +3,7 @@ console.log(itemArray)
 const addListButton = element =>{
     element.disabled = true;
     element.classList.remove('bg-primary');
+    element.classList.add('disable-btn')
     const itemName = element.parentNode.children[0].innerText;
     const itemPrice = element.parentNode.children[1].children[0].innerText;
     
@@ -43,6 +44,7 @@ const itemRemove = (element) =>{
         if(buttonText === fixedData){
             button.disabled = false;
             button.classList.add('bg-primary');
+            button.classList.remove('disable-btn')
         }
     }
     
